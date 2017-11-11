@@ -2,6 +2,265 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    meta(charset="UTF-8")
+    meta(name="description", content="Bob Hensley is an experienced full-stack developer, digital marketer, and systems administrator living in Keene, NH.")
+    meta(name="author", content="Bob Hensley")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb", crossorigin="anonymous")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i")
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+  body#top
+    nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+      a.navbar-brand.js-scroll-trigger(href="#top")
+        span.d-block.d-lg-none Bob Hensley
+        span.d-none.d-lg-block
+          img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src="images/bob-hensley.png", alt="Bob Hensley")
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navContent", aria-controls="navContent", aria-expanded="false", aria-label="Toggle Navigation")
+        span.navbar-toggler-icon
+      #navContent.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#about") About
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#experience") Experience
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#skills") Skills
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#certifications") Certifications
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href="#projects") Projects
+
+    .container-fluid.p-0
+      section#about.resume-section.p-3.p-lg-5.d-flex.d-column
+        .my-auto
+          h1.mb-0 Bob 
+            span.text-primary Hensley
+          .subheading.mb-5 Keene, NH · (603) 852-8281 · 
+            a(href="mailto:bob@bobbyhensley.com") bob@bobbyhensley.com
+          p
+            | Hey there!  I'm an experienced full-stack developer, digital marketer, and systems administrator.  An odd collection of skills that has developed due to my role as Director of Marketing &amp; IT for the Fairfield's Auto Group.
+          p.mb-5
+            | Over the years I've developed a passion for database systems and the theory that goes into efficiently storing, retrieving, and manipulating data.  I love to write code.  And I am constantly and consistently working on learning new things.
+          ul.list-inline.list-social-icons.mb-0
+            li.list-inline-item
+              a(href="https://www.facebook.com/bobhensley89", rel="external")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href="https://twitter.com/bobhensley", rel="external")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href="https://www.linkedin.com/in/bobbyhensley/", rel="external")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href="https://github.com/bhensley", rel="external")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-github.fa-stack-1x.fa-inverse
+
+      section#experience.resume-section.p-3.p-lg-5.d-flex.flex-column
+        .my-auto
+          h2.mb-5 Experience
+
+          .resume-item.d-flex.flex-column.flex-md-row.mb-5
+            .resume-content.mr-auto
+              h3.mb-0 Director of Marketing and IT
+              .subheading.mb-3 Fairfield's Auto Group
+              p
+                | As the Director of Marketing & IT, I am solely responsible for all marketing, advertising, and IT needs of an automotive dealership group consisting of five different dealerships across two states. Day-to-day I am responsible for ensuring all facets of the organization's online presence, marketing, advertising, and IT needs are met effectively, efficiently, and in a manner that compliments the organization's evolving business needs. I wear many hats in this position, ranging from webmaster and web developer, to social media strategist, SEO/SEM expert, analytics monster, and graphic designer.
+            .resume-date.text-md-right
+              span.text-primary May 2017 - Present
+          .resume-item.d-flex.flex-column.flex-md-row.mb-5
+            .resume-content.mr-auto
+              h3.mb-0 Director of Business Development
+              .subheading.mb-3 Fairfield's Auto Group
+              p
+                | As the Director of Business Development I oversaw the Business Development Center (call center) for an automotive dealership group consisting of five different dealerships. As a unified, centralized Business Development Center (BDC), I worked through numerous challenges and obstacles to ensure the department grew 20-30% every month, year-over-year, and met evolving requirements of five distinct sales departments.
+            .resume-date.text-md-right
+              span.text-primary January 2016 - April 2017
+          .resume-item.d-flex.flex-column.flex-md-row.mb-5
+            .resume-content.mr-auto
+              h3.mb-0 Digital Marketing Manager
+              .subheading.mb-3 Fairfield's Auto Group
+              p
+                | As the first Digital Marketing Manager for the company, I developed and grew a position responsible for all facets of the group's digital presence. Overcame obstacles and implemented processes for all digital marketing efforts for an automotive group consisting of five different dealerships. Developed and followed through numerous advertising campaigns at the same time, for the different dealerships.
+            .resume-date.text-md-right
+              span.text-primary May 2014 - December 2016
+          .resume-item.d-flex.flex-column.flex-md-row.mb-5
+            .resume-content.mr-auto
+              h3.mb-0 Account Manager
+              .subheading.mb-3 PC Connection
+              p
+                | Sought out and developed new business for myself and PC Connection. Built and maintained solid relationships with clientele. Demonstrated honesty and trust by providing excellent availability and transparency with clients. Aided in the design and procurement of IT solutions of various scale. Proactively brought ideas to the table. Maintained strong vendor relationships and leveraged to client's advantage whenever necessary.
+            .resume-date.text-md-right
+              span.text-primary February 2013 - February 2014
+          .resume-item.d-flex.flex-column.flex-md-row.mb-5
+            .resume-content.mr-auto
+              h3.mb-0 Multimedia &amp; IT Specialist
+              .subheading.mb-3 Fairfield's Auto Group (Keene Campus)
+              p
+                | Efficiently and, in a detailed manner, took engaging and descriptive photographs of all vehicles on the lot.  Wrote content for every vehicle, for the website and third-party inventory listings.  Filmed vehicle walkarounds and special offers for website and social media.  Managed IT needs of the campus (three dealerships), including desktop, data center, and telephone support, and ordering of equipment.
+            .resume-date.text-md-right
+              span.text-primary February 2013 - February 2014
+       
+      section#skills.resume-section.p-3.p-lg-5.d-flex.flex-column
+        .my-auto
+          h2.mb-5 Skills
+
+          .subheading.mb-3 Programming Languages &amp; Tools
+          ul.list-inline.list-icons
+            li.list-inline-item
+              i.devicons.devicons-html5(title="HTML5 / XHTML", alt="HTML and XHTML")
+            li.list-inline-item
+              i.devicons.devicons-css3(title="CSS3", alt="CSS3")
+            li.list-inline-item
+              i.devicons.devicons-javascript(title="JavaScript", alt="JavaScript")
+            li.list-inline-item
+              i.devicons.devicons-jquery(title="jQuery", alt="jQuery")
+            li.list-inline-item
+              i.devicons.devicons-coffeescript(title="CoffeeScript", alt="CoffeeScript")
+            li.list-inline-item
+              i.devicons.devicons-nodejs(title="NodeJS", alt="NodeJS")
+            li.list-inline-item
+              i.devicons.devicons-sass(title="Sass", alt="Sass")
+            li.list-inline-item
+              i.devicons.devicons-bootstrap(title="Bootstrap", alt="Bootstrap")
+            li.list-inline-item
+              i.devicons.devicons-php(title="PHP", alt="PHP")
+            li.list-inline-item
+              i.devicons.devicons-ruby(title="Ruby", alt="Ruby")
+            li.list-inline-item
+              i.devicons.devicons-rails(title="Ruby on Rails", alt="Ruby on Rails")
+            li.list-inline-item
+              i.devicons.devicons-mongodb(title="MongoDB", alt="MongoDB")
+            li.list-inline-item
+              i.devicons.devicons-mysql(title="MySQL and MariaDB", alt="MySQL and MariaDB")
+            li.list-inline-item
+              i.devicons.devicons-postgresql(title="PostgreSQL", alt="PostgreSQL")
+            li.list-inline-item
+              i.devicons.devicons-redis(title="Redis", alt="Redis")
+            li.list-inline-item
+              i.devicons.devicons-github(title="Github", alt="Github")
+            li.list-inline-item
+              i.devicons.devicons-apache(title="Apache", alt="Apache")
+            li.list-inline-item
+              i.devicons.devicons-heroku(title="Heroku", alt="Heroku")
+            li.list-inline-item
+              i.devicons.devicons-linux(title="Linux", alt="Linux")
+          .row
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Marketing Platforms
+              ul
+                li
+                  |  CDK
+                li
+                  |  Dealer.com
+                li
+                  |  Google
+                li
+                  |  Facebook
+                li
+                  |  YouTube
+                li
+                  |  MailChimp
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Marketing Practices
+              ul
+                li
+                  |  Search Engine Optimization
+                li
+                  |  Search Advertising
+                li
+                  |  Display Advertising
+                li
+                  |  Email Campaigns
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Multimedia Applications
+              ul
+                li
+                  |  Adobe Photoshop
+                li
+                  |  Adobe Illustrator
+                li
+                  |  Sony Vegas Pro
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Source Control Platforms
+              ul
+                li
+                  |  Git
+                li
+                  |  SVN
+
+      section#certifications.resume-section.p-3.p-lg-5.d-flex.flex-column
+        .my-auto
+          h2.mb-5 Certifications
+          ul.fa-ul.mb-0
+            li
+              i.fa-li.fa.fa-check
+              | Google Analytics
+            li
+              i.fa-li.fa.fa-check
+              | Google AdWords: Foundations
+            li
+              i.fa-li.fa.fa-check
+              | Google AdWords: Search Advertising
+            li
+              i.fa-li.fa.fa-check
+              | General Motors Digital Marketing Manager
+
+      section#projects.resume-section.p-3.p-lg-5.d-flex.flex-column
+        .my-auto
+          h2.mb-5 Projects
+
+          .row
+            .col
+              .subheading.mb-3
+                a(href="http://www.nationstruck.com/", target="_blank") Nation's Truck
+              p Nation's Truck is a division of Fairfield's Cadillac, Buick, GMC, Inc.  Fairfield's requested a simple website be built, in little time, that would allow them to upload and advertise their various rollbacks and wreckers.
+            .col
+              .subheading.mb-3
+                a(href="hf-scam-database.herokuapp.com", target="_blank") HF Scam Database
+              p
+                | Proof-of-concept more than anything- HF Scam Database was written to eventually become a tutorial series for the 
+                a(href="hackforums.net", rel="external") Hack Forums
+                |  community.  The application is written as a SPA (Single Page Application) on the MEAN stack (MongoDB, Express, Angular, and Node.js).
+
+      // Contact section... TBD
+        section#contact.resume-section.p-3.p-lg-5.d-flex.flex-column
+          .my-auto
+            h2.mb-5 Contact
+
+            .subheading.mb-3 Have a project to discuss?  Work to be done?  A question to ask?  Get in touch of me today using the form below!
+            form
+              .form-group
+                label(for="name") Your name
+                input(type="text", aria-describedby="nameHelp", placeholder="Your Name", name="name")#name.form-control
+                small#nameHelp.form-text.text-muted How should I address you?
+              .form-group
+                label(for="email") Your email
+                input(type="email", aria-describedby="emailHelp", placeholder="Your Email Address", name="email")#email.form-control
+                small#emailHelp.form-text.text-muted What email should I email you back at?
+              .form-group
+                label(for="subject") Subject
+                input(type="text", aria-describedby="subHelp", placeholder="What are you contacting me about?", name="subject")#email.form-control
+                small#subHelp.form-text.text-muted What is this email regarding?
+              .form-group
+                label(for="message") Message
+                textarea(name="message", rows="3", aria-describedby="msgHelp", placeholder="What message would you like to send to me?")#message.form-control
+                small#msgHelp.form-text.text-muted The message you'd like to send to me.
+              btn(type="submit").btn.btn-primary Message Me
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js", integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js", integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ", crossorigin="anonymous")
+    script(src="javascripts/jquery.easing.min.js")
+    script(src="javascripts/resume.js")
