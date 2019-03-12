@@ -3,7 +3,7 @@ html
   head
     title= title
     meta(charset="UTF-8")
-    meta(name="description", content="Bob Hensley is an experienced full-stack developer, digital marketer, and systems administrator living in Keene, NH.")
+    meta(name="description", content="Bob Hensley is an experienced full-stack developer, digital marketer, and systems administrator living in Concord, NH.")
     meta(name="author", content="Bob Hensley")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb", crossorigin="anonymous")
@@ -13,7 +13,15 @@ html
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i")
     link(rel='stylesheet', href='/stylesheets/layout.css')
+    script.
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K7LGNQD');
   body#top
+    noscript
+      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-K7LGNQD", height="0", width="0", style="display:none;visibility:hidden")
     nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
       a.navbar-brand.js-scroll-trigger(href="#top")
         span.d-block.d-lg-none Bob Hensley
@@ -23,6 +31,8 @@ html
         span.navbar-toggler-icon
       #navContent.collapse.navbar-collapse
         ul.navbar-nav
+          li.nav-item
+            a.nav-link(href="https://blog.bobbyhensley.com", target="_blank") Blog
           li.nav-item
             a.nav-link.js-scroll-trigger(href="#about") About
           li.nav-item
@@ -39,18 +49,13 @@ html
         .my-auto
           h1.mb-0 Bob 
             span.text-primary Hensley
-          .subheading.mb-5 Keene, NH · (603) 852-8281 · 
+          .subheading.mb-5 Concord, NH · (603) 852-8281 · 
             a(href="mailto:bob@bobbyhensley.com") bob@bobbyhensley.com
           p
-            | Hey there!  I'm an experienced full-stack developer, digital marketer, and systems administrator.  An odd collection of skills that has developed due to my role as Director of Marketing &amp; IT for the Fairfield's Auto Group.
+            | Hey there!  If you're here then you probably know my name is Bob Hensley.  I'm an experienced full-stack developer, digital marketer, and systems administrator.  An odd collection of skills I've developed over the past fifteen or more years.
           p.mb-5
             | Over the years I've developed a passion for database systems and the theory that goes into efficiently storing, retrieving, and manipulating data.  I love to write code.  And I am constantly and consistently working on learning new things.
-          ul.list-inline.list-social-icons.mb-0
-            li.list-inline-item
-              a(href="https://www.facebook.com/bobhensley89", rel="external")
-                span.fa-stack.fa-lg
-                  i.fa.fa-circle.fa-stack-2x
-                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+          ul.list-inline.list-social-icons.mb-9
             li.list-inline-item
               a(href="https://twitter.com/bobhensley", rel="external")
                 span.fa-stack.fa-lg
@@ -66,6 +71,11 @@ html
                 span.fa-stack.fa-lg
                   i.fa.fa-circle.fa-stack-2x
                     i.fa.fa-github.fa-stack-1x.fa-inverse
+            li.list-inline-item
+              a(href="https://stackoverflow.com/users/503979/bob-hensley", rel="external")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                    i.fa.fa-stack-overflow.fa-stack-1x.fa-inverse
 
       section#experience.resume-section.p-3.p-lg-5.d-flex.flex-column
         .my-auto
@@ -73,12 +83,22 @@ html
 
           .resume-item.d-flex.flex-column.flex-md-row.mb-5
             .resume-content.mr-auto
-              h3.mb-0 Director of Marketing and IT
+              h3.mb-0 Full-Stack Engineer
+              .subheading.mb-3 R.C. Brayshaw & Company
+
+              p
+                | As the Marketing & Web Service Specialist, I work with clients and R.C. Brayshaw as a whole on a wide variety of marketing and web development needs and projects.  I am responsible for developing, implementing and managing websites; writing code as necessary to accomplish client and business needs; ensuring web content remains fresh; and engaging with clients, both new and existing, to further discuss website needs.  I also ensure utilization of good, and current, Search Engine Optimization (SEO) practices and consult with clients regarding SEO.  Create and maintain competitive and efficient Search Engine Marketing (SEM) campaigns; especially AdWords.  Create and maintain engaging and effective social media campaigns, including Facebook and Instagram.
+            .resume-date.text-md-right
+              span.text-primary Apr 2018 - Present
+
+          .resume-item.d-flex.flex-column.flex-md-row.mb-5
+            .resume-content.mr-auto
+              h3.mb-0 Director of Marketing and Operations
               .subheading.mb-3 Fairfield's Auto Group
               p
-                | As the Director of Marketing & IT, I am solely responsible for all marketing, advertising, and IT needs of an automotive dealership group consisting of five different dealerships across two states. Day-to-day I am responsible for ensuring all facets of the organization's online presence, marketing, advertising, and IT needs are met effectively, efficiently, and in a manner that compliments the organization's evolving business needs. I wear many hats in this position, ranging from webmaster and web developer, to social media strategist, SEO/SEM expert, analytics monster, and graphic designer.
+                | As the Director of Marketing & Operations I was solely responsible for all marketing, advertising, IT, and operational needs of an automotive dealership group consisting of five different dealerships across two states. Day-to-day I was responsible for ensuring all facets of the organization's online presence, marketing, advertising, IT, and sales-readiness needs were met effectively, efficiently, and in a manner that complimented the organization's evolving business needs. I wore many hats in this position, ranging from webmaster and web developer, to social media strategist, SEO/SEM expert, analytics monster, graphic designer, and even Sales Manager..
             .resume-date.text-md-right
-              span.text-primary May 2017 - Present
+              span.text-primary May 2017 - Apr 2018
           .resume-item.d-flex.flex-column.flex-md-row.mb-5
             .resume-content.mr-auto
               h3.mb-0 Director of Business Development
@@ -105,18 +125,18 @@ html
               span.text-primary February 2013 - February 2014
           .resume-item.d-flex.flex-column.flex-md-row.mb-5
             .resume-content.mr-auto
-              h3.mb-0 Multimedia &amp; IT Specialist
+              h3.mb-0 Digital Marketing &amp; IT Specialist
               .subheading.mb-3 Fairfield's Auto Group (Keene Campus)
               p
                 | Efficiently and, in a detailed manner, took engaging and descriptive photographs of all vehicles on the lot.  Wrote content for every vehicle, for the website and third-party inventory listings.  Filmed vehicle walkarounds and special offers for website and social media.  Managed IT needs of the campus (three dealerships), including desktop, data center, and telephone support, and ordering of equipment.
             .resume-date.text-md-right
-              span.text-primary February 2013 - February 2014
+              span.text-primary July 2012 - February 2013
        
       section#skills.resume-section.p-3.p-lg-5.d-flex.flex-column
         .my-auto
           h2.mb-5 Skills
 
-          .subheading.mb-3 Programming Languages &amp; Tools
+          .subheading.mb-3 Skills At a Glance
           ul.list-inline.list-icons
             li.list-inline-item
               i.devicons.devicons-html5(title="HTML5 / XHTML", alt="HTML and XHTML")
@@ -158,20 +178,37 @@ html
               i.devicons.devicons-linux(title="Linux", alt="Linux")
           .row
             .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Languages
+              ul
+                li HTML / HTML5
+                li CSS / CSS3 / SASS
+                li JavaScript / CoffeeScript
+                li PHP
+                li Ruby
+                li C#
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Frameworks & Libraries
+              ul
+                li Node.js
+                li Ruby on Rails
+                li jQuery
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Databases
+              ul
+                li MariaDB / MySQL
+                li PostgreSQL
+                li SQLite
+                li MongoDB
+                li Redis 
+            .col-sm-6.col-md-4.col-lg-3
               .subheading.mb-3 Marketing Platforms
               ul
-                li
-                  |  CDK
-                li
-                  |  Dealer.com
                 li
                   |  Google
                 li
                   |  Facebook
                 li
                   |  YouTube
-                li
-                  |  MailChimp
             .col-sm-6.col-md-4.col-lg-3
               .subheading.mb-3 Marketing Practices
               ul
@@ -183,6 +220,8 @@ html
                   |  Display Advertising
                 li
                   |  Email Campaigns
+                li
+                  | Ringless Voicemail Campaigns
             .col-sm-6.col-md-4.col-lg-3
               .subheading.mb-3 Multimedia Applications
               ul
@@ -199,7 +238,25 @@ html
                   |  Git
                 li
                   |  SVN
-
+                li
+                  |  Github
+                li
+                  |  SourceForge
+                li
+                  |  Google Code
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 Communication Platforms
+              ul
+                li
+                  | MailChimp
+                li
+                  | Constant Contact
+            .col-sm-6.col-md-4.col-lg-3
+              .subheading.mb-3 CMS / eCommerce Platforms
+              ul
+                li WordPress
+                li WooCommerce
+                li Shopify
       section#certifications.resume-section.p-3.p-lg-5.d-flex.flex-column
         .my-auto
           h2.mb-5 Certifications
@@ -224,15 +281,34 @@ html
           .row
             .col
               .subheading.mb-3
-                a(href="http://www.nationstruck.com/", target="_blank") Nation's Truck
-              p Nation's Truck is a division of Fairfield's Cadillac, Buick, GMC, Inc.  Fairfield's requested a simple website be built, in little time, that would allow them to upload and advertise their various rollbacks and wreckers.
+                a(href="https://newlondonhospital.org", target="_blank") New London Hospital
+              p
+                | New London Hospital had been running a non-responsive, minimal website for a number of years before comissioning R.C. Brayshaw.  We developed a custom look and feel, persuant to NLH's branding, and delivered a fully-responsive website, packed with useful features important to the hospital.  A complete physician directory and robust events system were paramount to NLH.  The events system supports RSVPing, the purchasing of tickets, and even setting up custom levels of purchasing (think golf tournaments- buying a team package vs. individual tickets).  NLH also requires a comprehensive eCommerce platform to handle online donations and monthly giving.
             .col
               .subheading.mb-3
-                a(href="hf-scam-database.herokuapp.com", target="_blank") HF Scam Database
+                a(href="https://agusa.com", target="_blank") Alliance Group, Inc.
               p
-                | Proof-of-concept more than anything- HF Scam Database was written to eventually become a tutorial series for the 
-                a(href="hackforums.net", rel="external") Hack Forums
-                |  community.  The application is written as a SPA (Single Page Application) on the MEAN stack (MongoDB, Express, Angular, and Node.js).
+                | Alliance Group, also known as Alliance Mechanical, commissioned R.C. Brayshaw for the creation of a brand-new website.  Based on WordPress, myself and the designer worked up a fully-responsive layout and attractive landing pages per Alliance's business needs.  Careers and team-based message is particularly important to the leadership at Alliance, so special attention was paid in setting up these pages, with engaging functionality to deliver the best message first.
+          .row
+            .col
+              .subheading.mb-3
+                a(href="https://lebanonballetschool.com", target="_blank") Lebanon Ballet School
+              p
+                | A rather simple website, Lebanon Ballet School (LBS) asked R.C. Brayshaw to create a new WordPress-based website with a modern layout.  Unique for this website is how the classes integrate with an in-house application used by LBS.  The pages had to be structured in such a way that their proprietary software could push course data in a way that cleanly displayed to the consumer.
+            .col
+              .subheading.mb-3
+                a(href="http://www.nationstruck.com/", target="_blank") Nation's Truck
+              p Nation's Truck is a division of Fairfield's Cadillac, Buick, GMC, Inc.  Fairfield's requested a simple website be built, in little time, that would allow them to upload and advertise their various rollbacks and wreckers.
+          .row
+            .col
+              .subheading.mb-3
+                a(href="http://sauss.onbhdc.us", target="_blank") Shorty: Another URL Shortening Service
+              p
+                | Written back in 2010, when I was primarily focused on the LAMP stack.  Written in PHP, backed by MySQL using PDO as an abstraction layer, and adhereing to basic OOP principles, SAUSS is a simple proof-of-concept for a URL shortening service that could be ported and used by others.  The only updating I've performed on this over the years was making it operable once again, due to significant versions coming and going both with PHP, but also Smarty (the templating engine utilized).
+              p
+                | The source code to this application can be found on Github at:
+                a(href="https://github.com/bhensley/sauss", target="_blank") https://github.com/bhensley/sauss
+                | .
 
       // Contact section... TBD
         section#contact.resume-section.p-3.p-lg-5.d-flex.flex-column
